@@ -13,8 +13,9 @@
 .DS_Store
 Thumbs.db
 
-# Large binaries / game files (Wallpaper Engine projects go in wallpapers/README)
+# Large binaries / game files (Wallpaper Engine scene packs live in Steam, not here)
 *.mp4
 *.mkv
 *.exe
+*.pkg
 .claude/

@@ -1,41 +1,44 @@
 # Wallpapers
 
-## Static wallpapers
+## Active wallpaper
 
-Drop `.jpg` / `.png` files into this directory. The install script will not auto-apply them — set them via:
-- **KDE**: Right-click desktop → Configure Desktop and Wallpaper → Image
+**绣丛阡陌4K (有声)** — animated rainy scene with fallen leaves, puddle reflections and ambient audio.
 
-## Wallpaper Engine (animated / interactive)
+- Workshop ID: `3016047975`
+- Steam URL: `steam://url/CommunityFilePage/3016047975`
+- Preview: `active/preview.gif`
+- Plugin settings: `wekde/wallpaper/3016047975.json`
 
-Wallpaper Engine runs through Steam on Linux via Plasma integration.
+## All subscribed Workshop wallpapers
 
-### Setup steps
+IDs are listed in `subscribed-workshop-ids.txt`. To re-subscribe on a new machine, open each in Steam:
 
-1. Install **Steam** (native or Flatpak):
-   ```bash
-   sudo pacman -S steam
-   # or: flatpak install com.valvesoftware.Steam
-   ```
+```bash
+while read id; do
+  xdg-open "steam://url/CommunityFilePage/$id"
+done < ~/Projects/cachyos-setup/wallpapers/subscribed-workshop-ids.txt
+```
 
-2. In Steam, install **Wallpaper Engine** (App ID `431960`).
+Or subscribe in bulk via the Steam Workshop page for Wallpaper Engine.
 
-3. Install the KDE Plasma plugin:
+## Wallpaper Engine KDE plugin (linux-wallpaperengine)
+
+Plugin config is saved in `wekde/`. On a new machine:
+
+1. Install **Steam** and **Wallpaper Engine** (App ID `431960`).
+2. Install the KDE Plasma plugin:
    ```bash
    paru -S plasma-wallpaperengine
    # or build from: https://github.com/catsout/wallpaper-engine-kde-plugin
    ```
-
+3. Copy the plugin config:
+   ```bash
+   cp -r ~/Projects/cachyos-setup/wallpapers/wekde ~/.config/wekde
+   ```
 4. Right-click desktop → Configure Desktop and Wallpaper → **Wallpaper Engine for Plasma**.
+5. Select the wallpaper with ID `3016047975` (or whichever you want from your subscribed list).
 
-5. Subscribe to wallpapers on the Steam Workshop and they'll appear inside the plugin.
+## Static wallpapers
 
-### Saving your wallpaper choices
-
-To persist which wallpaper is active, export your KDE desktop config:
-
-```bash
-cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc \
-   ~/Projects/cachyos-setup/kde/plasma-org.kde.plasma.desktop-appletsrc
-```
-
-Then re-add it to git.
+Drop `.jpg` / `.png` files into this directory and set them via:
+- Right-click desktop → Configure Desktop and Wallpaper → Image
