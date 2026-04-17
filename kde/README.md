@@ -10,21 +10,16 @@
 | `plasma-layout.js` | KDE scripting layout export |
 | `apply-theme.sh` | Auto-applies everything above |
 
-## Exporting your current KDE config
+## Configs included
 
-```bash
-# Color schemes
-cp ~/.local/share/color-schemes/Catppuccin*.colors \
-   ~/Projects/cachyos-setup/kde/colors/
-
-# Kvantum
-cp -r ~/.config/Kvantum/catppuccin* \
-   ~/Projects/cachyos-setup/kde/kvantum/
-
-# Panel / widgets layout
-cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc \
-   ~/Projects/cachyos-setup/kde/
-```
+| File | Description |
+|------|-------------|
+| `kdeglobals` | KDE global settings (fonts, colors, style) |
+| `kwinrc` | KWin window manager settings |
+| `plasmashellrc` | Plasma shell config |
+| `kglobalshortcutsrc` | Global keyboard shortcuts |
+| `plasma-org.kde.plasma.desktop-appletsrc` | Panel + widget layout |
+| `colors/CatppuccinMochaRosewater.colors` | Catppuccin color scheme |
 
 ## Catppuccin resources
 

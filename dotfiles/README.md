@@ -17,11 +17,17 @@ dotfiles/
 
 Run `scripts/install.sh` to symlink everything into place.
 
-## Exporting your current dotfiles
+## Configs included
 
-```bash
-cp -r ~/.config/fish      ~/Projects/cachyos-setup/dotfiles/
-cp -r ~/.config/kitty     ~/Projects/cachyos-setup/dotfiles/
-cp    ~/.config/starship.toml ~/Projects/cachyos-setup/dotfiles/starship/
-cp -r ~/.config/nvim      ~/Projects/cachyos-setup/dotfiles/
-```
+| Directory | Source |
+|-----------|--------|
+| `fish/` | `~/.config/fish/` — shell config + Catppuccin themes + Pure prompt |
+| `kitty/` | `~/.config/kitty/kitty.conf` — terminal emulator |
+| `alacritty/` | `~/.config/alacritty/alacritty.toml` — Nord color terminal |
+| `fastfetch/` | `~/.config/fastfetch/config.jsonc` — system info display |
+| `micro/` | `~/.config/micro/settings.json` + Catppuccin colorschemes |
+| `spicetify/` | `~/.config/spicetify/config-xpui.ini` — Spotify theming |
+| `gtk-3.0/` | `~/.config/gtk-3.0/settings.ini` |
+| `gtk-4.0/` | `~/.config/gtk-4.0/settings.ini` |
+
+> Note: `spicetify/config-xpui.ini` has an absolute `prefs_path` — update it after migration.
