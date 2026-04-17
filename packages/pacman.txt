@@ -1,0 +1,37 @@
+# Core / system
+base-devel
+linux-cachyos
+cachyos-settings
+cachyos-rate-mirrors
+cachyos-packageinstaller
+
+# Shell & terminal
+fish
+starship
+kitty
+tmux
+fastfetch
+
+# KDE Plasma
+plasma-desktop
+plasma-wayland-session
+kde-applications
+sddm
+
+# Development
+git
+neovim
+code
+
+# Theming
+kvantum
+qt5ct
+
+# Utilities
+flatpak
+fuse2
+p7zip
+unrar
+wget
+curl
+rsync

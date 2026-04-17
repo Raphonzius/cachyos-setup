@@ -1,0 +1,20 @@
+# AUR packages (install with yay or paru)
+
+# Theming — Catppuccin
+catppuccin-gtk-theme-mocha
+catppuccin-cursors-mocha
+kvantum-theme-catppuccin-mocha
+
+# Wallpaper Engine (requires Steam + Proton)
+# wallpaper-engine is run via Steam (App ID 431960)
+
+# Fonts
+ttf-jetbrains-mono-nerd
+ttf-fira-code-nerd
+noto-fonts-cjk
+noto-fonts-emoji
+
+# Utilities
+vesktop-bin
+spotify
+visual-studio-code-bin
