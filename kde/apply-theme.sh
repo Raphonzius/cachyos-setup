@@ -26,4 +26,8 @@ if [[ -f "$KDE_DIR/plasma-layout.js" ]]; then
     "$(cat "$KDE_DIR/plasma-layout.js")" || echo "  (plasma layout apply skipped — requires running session)"
 fi
 
+echo "==> Setting kitty as default terminal..."
+kwriteconfig5 --file kdeglobals --group General --key TerminalApplication kitty
+kwriteconfig5 --file kdeglobals --group General --key TerminalService kitty.desktop
+
 echo "==> KDE theming done."

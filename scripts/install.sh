@@ -37,6 +37,7 @@ link() {
 [[ -d "$DOTFILES_DIR/kitty" ]]   && link "$DOTFILES_DIR/kitty"   "$HOME/.config/kitty"
 [[ -d "$DOTFILES_DIR/starship" ]] && link "$DOTFILES_DIR/starship/starship.toml" "$HOME/.config/starship.toml"
 [[ -d "$DOTFILES_DIR/nvim" ]]    && link "$DOTFILES_DIR/nvim"    "$HOME/.config/nvim"
+[[ -d "$DOTFILES_DIR/environment.d" ]] && link "$DOTFILES_DIR/environment.d/terminal.conf" "$HOME/.config/environment.d/terminal.conf"
 
 # ── 3. KDE Theming ────────────────────────────────────────────────────────────
 echo ""

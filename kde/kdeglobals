@@ -121,6 +121,8 @@ ForegroundVisited=203, 166, 247
 [General]
 BrowserApplication=brave-browser.desktop
 ColorSchemeHash=3aedebd67dad5d75f286cba89d070ff78604c3ce
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 
 [Icons]
 Theme=Papirus
